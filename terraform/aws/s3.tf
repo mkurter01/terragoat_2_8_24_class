@@ -1,4 +1,3 @@
-AWS_ACCESS_KEY_ID=AKIA4T6XSYCAAMQPXYZ
 resource "aws_s3_bucket" "data" {
   # bucket is public
   # bucket is not encrypted
@@ -22,6 +21,7 @@ resource "aws_s3_bucket" "data" {
 }
 
 resource "aws_s3_bucket_object" "data_object" {
+    username=AKIA4T6XSYCAAMQPXYZ
   bucket = aws_s3_bucket.data.id
   key    = "customer-master.xlsx"
   source = "resources/customer-master.xlsx"
