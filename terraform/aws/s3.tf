@@ -1,3 +1,4 @@
+## testing 3_20_24
 AWS_ACCESS_KEY_ID=AKIA4T6XSYCAAMQPXYZ
 resource "aws_s3_bucket" "data" {
   # bucket is public
